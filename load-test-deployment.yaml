@@ -7,10 +7,16 @@ metadata:
   namespace: default
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      name: load-test
   template:
+    metadata:
+      labels:
+        name: load-test
     spec:
       containers:
-      - image: docker.io/errordeveloper/prom-nodejs-demo-load-test:slow
+      - image: errordeveloper/prom-nodejs-demo-load-test:slow
         name: load-test
         ports:
         - name: dummy

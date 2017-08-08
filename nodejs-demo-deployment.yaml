@@ -2,14 +2,14 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
-    chart: nodejs-demo-0.1.0
+    name: nodejs-demo
   name: nodejs-demo
   namespace: default
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: nodejs-demo
+      name: nodejs-demo
   strategy:
     rollingUpdate:
       maxSurge: 1
@@ -18,7 +18,7 @@ spec:
   template:
     metadata:
       labels:
-        app: nodejs-demo
+        name: nodejs-demo
     spec:
       containers:
       - image: quay.io/errordeveloper/nodejs-demo:8354af32a9d6e5ecacb0dde71e15e83e1668bad4
