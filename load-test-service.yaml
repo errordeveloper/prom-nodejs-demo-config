@@ -5,6 +5,7 @@ metadata:
   labels:
     name: load-test
   name: load-test
+  namespace: default
 spec:
   ports:
     - name: foo
