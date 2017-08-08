@@ -1,0 +1,11 @@
+# A dummy service to make this usable with flux
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: load-test
+  name: load-test
+spec:
+  ports:
+    - name: foo
+      port: 65535
