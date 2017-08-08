@@ -21,7 +21,7 @@ spec:
         name: nodejs-demo
     spec:
       containers:
-      - image: quay.io/errordeveloper/nodejs-demo:8354af32a9d6e5ecacb0dde71e15e83e1668bad4
+      - image: errordeveloper/prom-nodejs-demo
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
