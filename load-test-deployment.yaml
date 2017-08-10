@@ -16,7 +16,7 @@ spec:
         name: load-test
     spec:
       containers:
-      - image: errordeveloper/prom-nodejs-demo-load-test:slow
+      - image: errordeveloper/prom-nodejs-demo-load-test:fast
         name: load-test
         ports:
         - name: dummy
