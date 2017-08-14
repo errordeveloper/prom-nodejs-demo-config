@@ -17,6 +17,7 @@ spec:
     spec:
       containers:
       - image: errordeveloper/prom-nodejs-demo-load-test:fast
+        imagePullPolicy: Always
         name: load-test
         ports:
         - name: dummy
