@@ -9,5 +9,5 @@ spec:
   selector:
     name: load-test
   ports:
-    - name: dummy
-      port: 65535
+    - name: metrics
+      port: 9152

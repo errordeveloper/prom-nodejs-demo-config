@@ -20,5 +20,5 @@ spec:
         imagePullPolicy: Always
         name: load-test
         ports:
-        - name: dummy
-          containerPort: 65535
+        - name: metrics
+          containerPort: 9152
