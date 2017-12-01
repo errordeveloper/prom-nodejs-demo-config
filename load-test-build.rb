@@ -10,6 +10,7 @@ install_packages
 cmds = {
   slow: %w(-period 30s ab -n 1000 -c 80 http://nodejs-demo/),
   fast: %w(-period 60s ab -n 500 -c 40 http://nodejs-demo/),
+  latest: [],
 }
 
 flatten
